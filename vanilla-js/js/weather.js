@@ -17,4 +17,4 @@ function onGeofError() {
   alert("Can't find you. No weather for you");
 }
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeofError);
-weather.style.cssText = "color:pink; font-size:16px;";
+weather.style.cssText = "color:pink; font-size:16px; text-align:center";

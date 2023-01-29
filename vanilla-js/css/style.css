@@ -11,3 +11,24 @@
   position: absolute;
   z-index: 999;
 }
+input {
+  display: inline-block;
+  width: 15rem;
+  height: 2rem;
+  opacity: 0.8;
+  border-radius: 30px;
+  text-align: center;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 0.4);
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+.quote {
+  display: flex;
+  justify-content: center;
+}
+span {
+  padding: 2rem;
+}

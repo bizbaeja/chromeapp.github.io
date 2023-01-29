@@ -28,4 +28,4 @@ if (savedUsername === null) {
 
   paintGreetings(savedUsername);
 }
-greeting.style.cssText = "color:pink; font-size:26px;";
+greeting.style.cssText = "color:pink; font-size:26px; text-align:center ";
