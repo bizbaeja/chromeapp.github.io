@@ -1,0 +1,13 @@
+.hidden {
+  display: none;
+}
+
+.form-wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 88px;
+  padding-top: 139px;
+  display: inline-block;
+  position: absolute;
+  z-index: 999;
+}
