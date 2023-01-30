@@ -8,7 +8,7 @@ function getClock() {
   clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-clock.style.cssText = "color:whitesmoke; font-size:50px; text-align:center";
+clock.style.cssText = "color:whitesmoke; font-size:80px; text-align:center";
 //setInterval(호출하려는 함수, 반복할시간)
 getClock();
 setInterval(getClock, 1000);

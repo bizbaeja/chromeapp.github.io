@@ -224,8 +224,8 @@ const quotes = [
     author: "셰익스피어",
   },
 ];
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote div:first-child");
+const author = document.querySelector("#quote div:last-child");
 
 const todaysQoute = quotes[Math.floor(Math.random() * quotes.length)];
 quote.innerText = '"' + todaysQoute.quote + '"';
