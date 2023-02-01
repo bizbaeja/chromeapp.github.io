@@ -199,21 +199,14 @@ const quotes = [
     author: "그라시안",
   },
   {
-    quote: "제일 많이 바쁜 사람ㅇ이 제일 많은 시간을 가진다",
+    quote: "제일 많이 바쁜 사람이 제일 많은 시간을 가진다",
     author: "비네",
   },
   {
     quote: "일기예보에도 불구하고, 봄처럼 살아라",
     author: "릴리 퓰리처",
   },
-  {
-    quote: "",
-    author: "",
-  },
-  {
-    quote: "",
-    author: "",
-  },
+
   {
     quote:
       "사랑에는 항상 광기가 존재한다. 그러나 광기에는 항상 이유가 존재한다",
@@ -233,4 +226,5 @@ author.innerText = "-" + " " + todaysQoute.author;
 
 document.body.style.backgroundColor = "black";
 quote.style.cssText = "color:whitesmoke;  font-size:30px;  text-align:center;";
-author.style.cssText = "color:whitesmoke; font-size:10px;  text-align:center;";
+author.style.cssText =
+  "color:whitesmoke; font-size:15px;  text-align:center; padding-top:30px;";

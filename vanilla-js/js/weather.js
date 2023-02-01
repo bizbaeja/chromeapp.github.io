@@ -7,14 +7,19 @@ function onGeoOk(position) {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      const weather = document.querySelector("#weather div:first-child");
-      const city = document.querySelector("#weather div:last-child");
-      city.innerText = data.name;
-      weather.innerText = data.weather[0].main;
+      const weather = document.querySelector("#weather div:nth-child(1)");
+      const city = document.querySelector("#weather div:nth-child(2)");
+      const windSpeed = document.querySelector("#weather div:nth-child(3)");
+
+      city.innerText = `city :` + data.name;
+      weather.innerText = `weather :` + data.weather[0].main;
+      windSpeed.innerText = `wind speed :` + data.wind.speed;
+
+      console.log(data);
     });
 }
 function onGeofError() {
   alert("Can't find you. No weather for you");
 }
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeofError);
-weather.style.cssText = "color:pink; font-size:16px; text-align:center";
+weather.style.cssText = " font-size:16px; text-align:center";
